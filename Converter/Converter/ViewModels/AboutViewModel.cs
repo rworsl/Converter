@@ -18,7 +18,7 @@ namespace Converter.ViewModels
         {
             get
             {
-                return new List<string> { "mm", "cm", "m", "km" };
+                return new List<string> { "mm", "cm", "m", "km", "in", "ft", "mile", "yard", "furlong", "parsec" };
             }
         }
 

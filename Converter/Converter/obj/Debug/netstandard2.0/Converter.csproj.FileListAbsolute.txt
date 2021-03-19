@@ -35,3 +35,4 @@ C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstand
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstandard2.0\Converter.dll
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstandard2.0\ref\Converter.dll
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstandard2.0\Converter.pdb
+C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstandard2.0\Converter.csprojAssemblyReference.cache

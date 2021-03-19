@@ -23,7 +23,7 @@
             <RowDefinition Height="2" />
         </Grid.RowDefinitions>
             <StackLayout Orientation="Vertical" Padding="30,75,30,24" Spacing="20">
-            <Entry Grid.Row="0" Text="Value to convert" VerticalOptions="Center" />
+            <Entry Grid.Row="0" x:Name="inputValue" Keyboard="Numeric" Text="Value to convert" VerticalOptions="Center" />
             </StackLayout>
 
         <StackLayout Grid.Row="1">
@@ -33,22 +33,23 @@
                     <ColumnDefinition Width="4*" />
                 </Grid.ColumnDefinitions>
 
-                <Picker Grid.Column="0" Title="Unit to convert from" ItemsSource="{Binding UnitList}" WidthRequest="20" MinimumWidthRequest="20" Margin="20,0,0,0" />
-                <Picker Grid.Column="1" Title="Unit to convert to" ItemsSource="{Binding UnitList}" WidthRequest="20" MinimumWidthRequest="20" Margin="0,0,20,0" />
+                <Picker Grid.Column="0" x:Name="fromUnit" Title="Unit to convert from" ItemsSource="{Binding UnitList}" WidthRequest="20" MinimumWidthRequest="20" Margin="30,0,0,0"  />
+                <Picker Grid.Column="1" x:Name="toUnit" Title="Unit to convert to" ItemsSource="{Binding UnitList}" WidthRequest="20" MinimumWidthRequest="20" Margin="0,0,30,0" />
             </Grid>
             
             <Button Margin="100,10,100,0" Text="Convert"
                         Command="{Binding convert}"
+                        Clicked="Button_Clicked"
                         BackgroundColor="{StaticResource Primary}"
                         Grid.Row="3"
                         TextColor="White" />
 
             <Label Grid.Row="4" Text="Converted Value:" FontSize="Large" Margin="20,50,0,0"/>
 
-            <Label Grid.Row="5" x:Name="Result" Text="Result" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Margin="20,50,0,0"/>
+            <Label Grid.Row="5" x:Name="Result" Text="" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Margin="20,50,0,0"/>
 
             <Button Margin="100,50,100,0" Text="Copy to clipboard"
-                        Command="{Binding OpenWebCommand}"
+                        Clicked="Button_Clicked_1"
                         BackgroundColor="{StaticResource Primary}"
                         Grid.Row="3"
                         TextColor="White" />
