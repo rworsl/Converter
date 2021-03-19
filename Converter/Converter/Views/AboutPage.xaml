@@ -23,7 +23,7 @@
             <RowDefinition Height="2" />
         </Grid.RowDefinitions>
             <StackLayout Orientation="Vertical" Padding="30,75,30,24" Spacing="20">
-            <Entry Grid.Row="0" x:Name="inputValue" Keyboard="Numeric" Text="Value to convert" VerticalOptions="Center" />
+            <Entry Grid.Row="0" x:Name="inputValue" Keyboard="Numeric" Text="Value to convert" VerticalOptions="Center" Focused="inputValue_Focused" />
             </StackLayout>
 
         <StackLayout Grid.Row="1">

@@ -16,8 +16,6 @@ namespace Converter.Views
             InitializeComponent();
         }
 
-        //"mm", "cm", "m", "km", "in", "ft", "mile", "yard", "furlong", "parsec"
-
         private void Button_Clicked(object sender, EventArgs e)
         {
             string words = "";
@@ -95,6 +93,11 @@ namespace Converter.Views
         private void Button_Clicked_1(object sender, EventArgs e)
         {
             Clipboard.SetTextAsync(Result.Text);
+        }
+
+        private void inputValue_Focused(object sender, FocusEventArgs e)
+        {
+            ((Entry)sender).Text = string.Empty;
         }
     }
 }
