@@ -997,11 +997,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter.iOS\\Converter.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter.iOS\\Converter.iOS.csproj",
       "projectName": "Converter.iOS",
-      "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter.iOS\\Converter.iOS.csproj",
+      "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter.iOS\\Converter.iOS.csproj",
       "packagesPath": "C:\\Users\\Rich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1022,8 +1022,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter\\Converter.csproj": {
-              "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter\\Converter.csproj"
+            "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter\\Converter.csproj": {
+              "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter\\Converter.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/GYt4xNi1FzNts2w+jqSVAZp8nGYCT31xqgHv3gLOW0XIpB6IzgHjdExaZSx4KdJwQbWo+zmbMe6pQoiCfKoig==",
+  "dgSpecHash": "krJrO3jeXIVeqjmImFft/7IbYEEGF4UgB6OU2mHRvk2pfnR2RfyHf1e/OpV1R8hhId05bELMhDEzzdIr0Ao0og==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter.iOS\\Converter.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter.iOS\\Converter.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rich\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",

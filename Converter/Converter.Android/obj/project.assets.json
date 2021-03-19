@@ -2148,11 +2148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter.Android\\Converter.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter.Android\\Converter.Android.csproj",
       "projectName": "Converter.Android",
-      "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter.Android\\Converter.Android.csproj",
+      "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter.Android\\Converter.Android.csproj",
       "packagesPath": "C:\\Users\\Rich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter.Android\\obj\\",
+      "outputPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2173,8 +2173,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter\\Converter.csproj": {
-              "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter\\Converter.csproj"
+            "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter\\Converter.csproj": {
+              "projectPath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter\\Converter.csproj"
             }
           }
         }

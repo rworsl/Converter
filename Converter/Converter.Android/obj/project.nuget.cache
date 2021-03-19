@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IuiOYR8gy/kqQmwT8FcozX5CX/8g4TXQSE88UK0Ss/bi/dY1LiyWu+uCC5WRlkHx+BCHG8lFRAgRRZVc5LkNTg==",
+  "dgSpecHash": "Fnlb9UNT1vFPm4FHlvXRQ3xMouoYnzX8RuMKDRZXrD8Z7sKo8KX8rKLQISaRWv3bdRD16VLW8S6C4sWLVy8VGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter.Android\\Converter.Android.csproj",
+  "projectFilePath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter.Android\\Converter.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rich\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",

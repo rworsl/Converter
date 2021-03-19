@@ -17,31 +17,44 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="2" />
         </Grid.RowDefinitions>
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Entry Text="Value to convert" />
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="5*" />
-                        <ColumnDefinition Width="5*" />
-                    </Grid.ColumnDefinitions>
-                    <Picker Grid.Column="0" Title="Unit to convert from" ItemsSource="{Binding UnitList}" WidthRequest="30" MinimumWidthRequest="30" />
-                    <Picker Grid.Column="1" Title="Unit to convert to" ItemsSource="{Binding UnitList}" WidthRequest="30" MinimumWidthRequest="30" />
-                </Grid>
+            <StackLayout Orientation="Vertical" Padding="30,75,30,24" Spacing="20">
+            <Entry Grid.Row="0" Text="Value to convert" VerticalOptions="Center" />
+            </StackLayout>
 
+        <StackLayout Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="4*" />
+                </Grid.ColumnDefinitions>
 
-                <Button Margin="0,10,0,0" Text="Convert"
+                <Picker Grid.Column="0" Title="Unit to convert from" ItemsSource="{Binding UnitList}" WidthRequest="20" MinimumWidthRequest="20" Margin="20,0,0,0" />
+                <Picker Grid.Column="1" Title="Unit to convert to" ItemsSource="{Binding UnitList}" WidthRequest="20" MinimumWidthRequest="20" Margin="0,0,20,0" />
+            </Grid>
+            
+            <Button Margin="100,10,100,0" Text="Convert"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{StaticResource Primary}"
+                        Grid.Row="3"
                         TextColor="White" />
-            </StackLayout>
-        </ScrollView>
-        <StackLayout>
-            <Label Text="Converted Value:" FontSize="Large"/>
+
+            <Label Grid.Row="4" Text="Converted Value:" FontSize="Large" Margin="20,50,0,0"/>
+
+            <Label Grid.Row="5" Text="Result" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Margin="20,50,0,0"/>
+
+            <Button Margin="100,50,100,0" Text="Copy to clipboard"
+                        Command="{Binding OpenWebCommand}"
+                        BackgroundColor="{StaticResource Primary}"
+                        Grid.Row="3"
+                        TextColor="White" />
         </StackLayout>
+
+        
     </Grid>
 
 </ContentPage>

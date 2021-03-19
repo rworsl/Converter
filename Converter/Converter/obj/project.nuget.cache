@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rQn9aYXrzgAjUrQamcmSIHZ0eP1nybmQFUeN1i30AOwWDy7P3sUm9POa9r3r4m/6hrd1UQ0hwN0dkLwNxEvOwA==",
+  "dgSpecHash": "bW3ZQh83RrGAAlJpjPowNlHDIToudyZm2Z1yPGs0zU9mYEThQxfuoOPV3GxWFPryGqyxZ9ktnVB6S5rKhdEhlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rich\\Desktop\\Projects\\Converter\\Converter\\Converter\\Converter.csproj",
+  "projectFilePath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter\\Converter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rich\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Rich\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
