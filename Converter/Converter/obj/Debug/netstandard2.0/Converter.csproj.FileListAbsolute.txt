@@ -21,7 +21,6 @@ C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\bin\Debug\netstand
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\bin\Debug\netstandard2.0\Converter.dll
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\bin\Debug\netstandard2.0\ref\Converter.dll
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\bin\Debug\netstandard2.0\Converter.pdb
-C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstandard2.0\Converter.csprojAssemblyReference.cache
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\Rich\Desktop\Projects\Converters\Converter\Converter\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs

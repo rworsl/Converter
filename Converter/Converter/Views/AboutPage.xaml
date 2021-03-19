@@ -38,14 +38,14 @@
             </Grid>
             
             <Button Margin="100,10,100,0" Text="Convert"
-                        Command="{Binding OpenWebCommand}"
+                        Command="{Binding convert}"
                         BackgroundColor="{StaticResource Primary}"
                         Grid.Row="3"
                         TextColor="White" />
 
             <Label Grid.Row="4" Text="Converted Value:" FontSize="Large" Margin="20,50,0,0"/>
 
-            <Label Grid.Row="5" Text="Result" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Margin="20,50,0,0"/>
+            <Label Grid.Row="5" x:Name="Result" Text="Result" FontSize="Large" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Margin="20,50,0,0"/>
 
             <Button Margin="100,50,100,0" Text="Copy to clipboard"
                         Command="{Binding OpenWebCommand}"

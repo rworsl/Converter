@@ -13,5 +13,10 @@ namespace Converter.Views
             InitializeComponent();
         }
 
+        public void convert()
+        {
+            Result.Text = "Testing";
+        }
+
     }
 }
