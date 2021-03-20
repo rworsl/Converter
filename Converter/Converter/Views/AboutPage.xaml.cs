@@ -10,7 +10,7 @@ namespace Converter.Views
     public partial class AboutPage : ContentPage
     {
         double storedValue = 0;
-
+        string outputUnits = "";
         public AboutPage()
         {
             InitializeComponent();
@@ -18,24 +18,130 @@ namespace Converter.Views
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            string words = "";
             try
             {
-                int saveValue = Int32.Parse(inputValue.Text);
+                double saveValue = Double.Parse(inputValue.Text);
                 setInputToMM(saveValue);
+                getOutputUnits();
+                Converter();
             }
             catch (Exception)
             {
-                words = "No value entered";
+                string words = "No value entered";
+                Result.Text = words;
             }
-
-            words = storedValue.ToString();
-            Result.Text = words;
         }
 
-        private void setInputToMM(int saveValue)
+        private void Converter()
         {
+            double final = 0.0;
+            switch (outputUnits)
+            {
+                case "mm":
+                    //mm
+                    Result.Text = storedValue.ToString();
+                    break;
+                case "cm":
+                    //cm
+                    final = storedValue / 10;
+                    Result.Text = final.ToString();
+                    break;
+                case "m":
+                    //m
+                    final = storedValue / 1000;
+                    Result.Text = final.ToString();
+                    break;
+                case "km":
+                    //km
+                    final = storedValue / 100000;
+                    Result.Text = final.ToString();
+                    break;
+                case "in":
+                    //inches
+                    final = storedValue / 25.4;
+                    Result.Text = final.ToString();
+                    break;
+                case "ft":
+                    //feet
+                    final = storedValue / 304.8;
+                    Result.Text = final.ToString();
+                    break;
+                case "mile":
+                    //mile
+                    final = storedValue / 1609344;
+                    Result.Text = final.ToString();
+                    break;
+                case "yard":
+                    //yard
+                    final = storedValue / 914.4;
+                    Result.Text = final.ToString();
+                    break;
+                case "furlong":
+                    //furlong
+                    final = storedValue / 201168;
+                    Result.Text = final.ToString();
+                    break;
+                case "parsec":
+                    //parsec
+                    final = storedValue / 0.000000000000000009223;
+                    Result.Text = final.ToString();
+                    break;
+                default:
+                    break;
+            }
+        }
 
+        private void getOutputUnits()
+        {
+            switch (toUnit.SelectedIndex)
+            {
+                case 0:
+                    //mm
+                    outputUnits = "mm";
+                    break;
+                case 1:
+                    //cm
+                    outputUnits = "cm";
+                    break;
+                case 2:
+                    //m
+                    outputUnits = "m";
+                    break;
+                case 3:
+                    //km
+                    outputUnits = "km";
+                    break;
+                case 4:
+                    //inches
+                    outputUnits = "in";
+                    break;
+                case 5:
+                    //feet
+                    outputUnits = "ft";
+                    break;
+                case 6:
+                    //mile
+                    outputUnits = "mile";
+                    break;
+                case 7:
+                    //yard
+                    outputUnits = "yard";
+                    break;
+                case 8:
+                    //furlong
+                    outputUnits = "furlong";
+                    break;
+                case 9:
+                    //parsec
+                    outputUnits = "parsec";
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void setInputToMM(double saveValue)
+        {
             switch (fromUnit.SelectedIndex)
             {
                 case 0:
@@ -64,7 +170,7 @@ namespace Converter.Views
                     break;
                 case 6:
                     //mile
-                    storedValue = saveValue * 1609000;
+                    storedValue = saveValue * 1609344;
                     break;
                 case 7:
                     //yard
@@ -82,7 +188,6 @@ namespace Converter.Views
                     break;
             }
         }
-
 
         /// <summary>
         /// Copies converted values to clipboard

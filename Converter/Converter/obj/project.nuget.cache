@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "bW3ZQh83RrGAAlJpjPowNlHDIToudyZm2Z1yPGs0zU9mYEThQxfuoOPV3GxWFPryGqyxZ9ktnVB6S5rKhdEhlA==",
+  "dgSpecHash": "MlLuIInHceZddEw+Ur0ZVEty+6S4/6F1WQttGXYA0I2sN5sp9gGe2zB86yIe9xx7drAj+4mJZz9ENHEwtk1lsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rich\\Desktop\\Projects\\Converters\\Converter\\Converter\\Converter.csproj",
+  "projectFilePath": "C:\\Users\\RichW\\Desktop\\Projects\\Converters\\Converter\\Converter\\Converter.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Rich\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Rich\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Rich\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\RichW\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\RichW\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\RichW\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\RichW\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\RichW\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }
