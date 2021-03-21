@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Numerics;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -9,7 +10,7 @@ namespace Converter.Views
 {
     public partial class AboutPage : ContentPage
     {
-        double storedValue = 0;
+        decimal storedValue = 0;
         string outputUnits = "";
         public AboutPage()
         {
@@ -20,7 +21,7 @@ namespace Converter.Views
         {
             try
             {
-                double saveValue = Double.Parse(inputValue.Text);
+                decimal saveValue = Decimal.Parse(inputValue.Text);
                 setInputToMM(saveValue);
                 getOutputUnits();
                 Converter();
@@ -34,7 +35,6 @@ namespace Converter.Views
 
         private void Converter()
         {
-            double final = 0.0;
             switch (outputUnits)
             {
                 case "mm":
@@ -43,7 +43,7 @@ namespace Converter.Views
                     break;
                 case "cm":
                     //cm
-                    final = storedValue / 10;
+                    var final = storedValue / 10;
                     Result.Text = final.ToString();
                     break;
                 case "m":
@@ -58,33 +58,34 @@ namespace Converter.Views
                     break;
                 case "in":
                     //inches
-                    final = storedValue / 25.4;
+                    final = storedValue / Decimal.Parse("25.4");
                     Result.Text = final.ToString();
                     break;
                 case "ft":
                     //feet
-                    final = storedValue / 304.8;
+                    final = storedValue / Decimal.Parse("304.8");
                     Result.Text = final.ToString();
                     break;
                 case "mile":
                     //mile
-                    final = storedValue / 1609344;
+                    final = storedValue / Decimal.Parse("1609344");
                     Result.Text = final.ToString();
                     break;
                 case "yard":
                     //yard
-                    final = storedValue / 914.4;
+                    final = storedValue / Decimal.Parse("914.4");
                     Result.Text = final.ToString();
-                    break;
+                    break;  
                 case "furlong":
                     //furlong
-                    final = storedValue / 201168;
+                    final = storedValue / Decimal.Parse("201168");
                     Result.Text = final.ToString();
                     break;
                 case "parsec":
                     //parsec
-                    final = storedValue / 0.000000000000000009223;
-                    Result.Text = final.ToString();
+                    decimal testNum = Decimal.Parse("30856778199999996000");
+                    var placeholder = storedValue / testNum;
+                    Result.Text = placeholder.ToString();
                     break;
                 default:
                     break;
@@ -140,7 +141,7 @@ namespace Converter.Views
             }
         }
 
-        private void setInputToMM(double saveValue)
+        private void setInputToMM(decimal saveValue)
         {
             switch (fromUnit.SelectedIndex)
             {
@@ -162,19 +163,19 @@ namespace Converter.Views
                     break;
                 case 4:
                     //inches
-                    storedValue = saveValue * 25.4;
+                    storedValue = saveValue * Decimal.Parse("25.4");
                     break;
                 case 5:
                     //feet
-                    storedValue = saveValue * 304.8;
+                    storedValue = saveValue * Decimal.Parse("304.8");
                     break;
                 case 6:
                     //mile
-                    storedValue = saveValue * 1609344;
+                    storedValue = saveValue * Decimal.Parse("1609344");
                     break;
                 case 7:
                     //yard
-                    storedValue = saveValue * 914.4;
+                    storedValue = saveValue * Decimal.Parse("914.4");
                     break;
                 case 8:
                     //furlong
@@ -182,7 +183,8 @@ namespace Converter.Views
                     break;
                 case 9:
                     //parsec
-                    storedValue = saveValue * 0.000000000000000009223;
+                    decimal testNum = decimal.Parse("30856778199999996000");
+                    storedValue = saveValue* testNum;
                     break;
                 default:
                     break;
